@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  
+  function ordenarNumeros(datos){
+    let arr = true
+    while (arr) {
+    arr = false;
+    
+     for(let i = 0; i < datos.length; i++){
+     if (datos[i] > datos[i + 1] && typeof datos[i] == 'number') {
+     let arri = datos[i]
+     datos[i] = datos [i+1]
+     datos[i+1] = arri
+     arr = true;
+     }
+     } 
+    } 
+    return datos
+    }
+        
+console.log(ordenarNumeros(['unacadena',3, 9, 1, 10, 500, 1, 10, true]))
+      
+    
+  </script>
+    
+</body>
+</html>

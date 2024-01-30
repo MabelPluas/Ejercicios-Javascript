@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  let fibonacci = [0, 1];
+    let numero = 0;
+
+    function numeroDeElementos() {
+    for (i = 0; i <= 20; i++) {
+    numero = fibonacci[i] + fibonacci[fibonacci.length-1];
+    fibonacci.push(numero);
+    }
+    }
+        numeroDeElementos()
+        console.log(fibonacci)
+    </script>            
+</body>
+</html>
